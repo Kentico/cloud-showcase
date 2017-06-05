@@ -1,5 +1,5 @@
 # Kentico Cloud Showcase Site
-
+[<img align="right" src="/img/site_thumbnail.png" alt="Kentico Cloud Showcase screenshot" />](/img/site.png)
 Read the whole blog post here: https://kenticocloud.com/blog/creating-the-kentico-cloud-showcase-site
 
 Browse the site: https://kc-showcase.azurewebsites.net/
