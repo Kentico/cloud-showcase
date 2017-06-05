@@ -1,0 +1,264 @@
+﻿/* Space out content a bit */
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #007dcc;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+    padding-top: 19px;
+    color: #777;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+    padding: 14px 24px;
+    font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+}
+
+.marketing p + h4 {
+    margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+
+/*#region Featured Project*/
+.featured-project {
+    text-align: center;
+}
+
+.featured-project-header {
+    color: #fff;
+    background-color: #ef5a22;
+    font-size: xx-large;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.featured-project-container {
+    display: flex;
+    background-color: #0071b8;
+    color: #fff;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 10px solid #007dcc;
+    border-bottom: 10px solid #c6c6c6;
+}
+
+.featured-project-screenshot-container {
+    background-color: #fff;
+    padding: 10px;
+    margin: 20px;
+}
+
+.featured-project-screenshot {
+}
+
+
+.featured-project-details {
+    background-color: #0071b8;
+    text-align: left;
+    padding: 20px;
+}
+
+.featured-project-name {
+    background: #fff;
+    border-bottom: 5px solid #c6c6c6;
+    position: relative;
+    display: block;
+    padding: 9px 20px 8px;
+    font: 600 16px/26px 'Source Sans Pro',sans-serif;
+    color: #ef5a22;
+    text-align: center;
+    border-radius: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    transition: border-color .2s,background .2s,color .2s;
+    margin-bottom: 20px;
+}
+
+/*#endregion Featured Project*/
+
+/*#region Projects*/
+.projects {
+    text-align: center;
+    background-color: #f7f7f7;
+    color: #000;
+    padding: 20px 0 50px 0;
+}
+
+.projects-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.project-container {
+    width: 300px;
+    overflow: hidden;
+}
+
+.project-container-background {
+    background-color: #0071b8;
+    padding: 10px;
+    margin: 10px;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.project-link-text {
+    background: #ef5a22;
+    border-bottom: 5px solid #db531f;
+    position: relative;
+    display: block;
+    padding: 9px 20px 8px;
+    font: 600 16px/26px 'Source Sans Pro',sans-serif;
+    color: #fff;
+    text-align: center;
+    border-radius: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    transition: border-color .2s,background .2s,color .2s;
+}
+
+.project-screenshot-container {
+    width: 100%;
+}
+
+.project-screenshot {
+    width: 100%;
+}
+
+.project-details {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.project-details-header {
+    font-weight: bold;
+}
+
+.project-details-innercontent {
+    margin: 10px;
+}
+
+.project-details-link {
+    font-size: small;
+}
+
+.project-technologies-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    column-count: 3;
+    column-gap: 10px;
+    font-size: small;
+    text-align: center;
+}
+
+.project-details-content {
+    margin-top: 10px;
+    color: #fff;
+    display: none;
+    padding: 10px;
+}
+
+.project-link-toggle {
+    cursor: pointer;
+}
+
+/*#endregion Projects*/
+
+/*#region Footer*/
+.footer-container {
+    text-align: center;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.footer p {
+    color: #fff;
+}
+/*#endregion Footer*/
+

@@ -1,0 +1,88 @@
+﻿@model HomeData
+@{
+    ViewData["Title"] = Model.Content.Title;
+}
+<div class="row marketing">
+    <img src="@Model.Content.Headerimage.First().Url" alt="Kentico Cloud" class="header-image img-responsive" />
+</div>
+
+<div class="row marketing">
+    @Html.Raw(@Model.Content.Content)
+</div>
+<div class="row marketing">
+    <div class="featured-project">
+        <div class="featured-project-container">
+            <div class="featured-project-screenshot-container">
+                <a href="@Model.Content.TopProject.Url" target="_blank"><img src="@Model.Content.TopProject.Screenshot.First().Url" class="featured-project-screenshot img-responsive" alt="@Model.Content.TopProject.Screenshot.First().Name" /></a>
+            </div>
+            <div class="featured-project-details">
+                <div class="featured-project-name">
+                    @Model.Content.TopProject.System.Name
+                </div>
+                <div class="project-details-header">URL</div>
+                <div class="project-details-innercontent"><a href="@Model.Content.TopProject.Url" target="_blank">@Model.Content.TopProject.Url</a></div>
+                <div class="project-details-header">Technologies</div>
+                <div class="project-details-innercontent">
+                    <ul class="project-technologies-list">
+                        @foreach (var technology in @Model.Content.TopProject.Technologies)
+                        {
+                            <li>@technology.Name</li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row marketing">
+    <div class="projects">
+        <div class="container">
+            <div class="projects-container">
+                @foreach (var project in Model.Projects)
+                {
+                    if (@project.System.Codename != Model.Content.TopProject.System.Codename)
+                    {
+                        <div class="project-container">
+                            <div class="project-container-background">
+                                <div class="project-screenshot-container">
+                                    @foreach (var image in project.Screenshot)
+                                    {
+                                        <a href="@project.Url" target="_blank"><img src="@image.Url" class="project-screenshot img-responsive" alt="@image.Name" /></a>
+                                    }
+                                </div>
+                                <div class="project-details">
+                                    <div class="project-details-link">
+                                        <a class="project-link-toggle">
+                                            <div class="project-link-text">
+                                                @project.System.Name
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="project-details-content">
+                                        <div class="project-details-header">URL</div>
+                                        <div class="project-details-innercontent"><a href="@project.Url" target="_blank" class="project-details-link" id="@project.System.Codename">@project.Url</a></div>
+                                        <div class="project-details-header">Technologies</div>
+                                        <div class="project-details-innercontent">
+                                            <ul class="project-technologies-list">
+                                                @foreach (var technology in project.Technologies)
+                                                {
+                                                    <li>@technology.Name</li>
+                                                }
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+</div>
+<div class="row marketing">
+    <div class="footer-container">
+        @Html.Raw(@Model.Content.Footer)
+    </div>
+</div>
