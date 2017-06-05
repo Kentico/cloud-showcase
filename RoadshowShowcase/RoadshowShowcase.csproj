@@ -12,11 +12,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="IISUrlRewrite.xml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="IISUrlRewrite.xml" />
+    <Content Include="IISUrlRewrite.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="wwwroot\css\ie10-viewport-bug-workaround.css" />
     <Content Include="wwwroot\css\site.css" />
     <Content Include="wwwroot\favicon.ico" />
