@@ -5,3 +5,5 @@ Read the whole blog post here: https://kenticocloud.com/blog/creating-the-kentic
 Browse the site: https://kc-showcase.azurewebsites.net/
 
 Review the code changes: https://github.com/Kentico/cloud-showcase/tree/code-changes ([Download](https://github.com/Kentico/cloud-showcase/archive/code-changes.zip))
+
+![Analytics](https://kentico-ga-beacon.azurewebsites.net/api/UA-69014260-4/Kentico/cloud-showcase?pixel)
